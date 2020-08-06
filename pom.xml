@@ -1,0 +1,210 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.svb</groupId>
+	<artifactId>InvestCloudBDD</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>InvestCloudBDD</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<testng.version>6.10</testng.version>
+		<selenium.version>3.11.0</selenium.version>
+		<java.compiler.version>1.8</java.compiler.version>
+		<maven.compiler.version>3.7.0</maven.compiler.version>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.surefire.plugin.version>2.21.0</maven.surefire.plugin.version>
+
+		<cucumber.java.version>1.2.5</cucumber.java.version>
+		<cucumber.jvm.version>1.0.5</cucumber.jvm.version>
+		<cucumber.testNg.version>1.2.5</cucumber.testNg.version>
+		<cucumber.reporting.version>3.8.0</cucumber.reporting.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.security</groupId>
+			<artifactId>xml-security-impl</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-clean-plugin</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-dependency-plugin</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.java.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>${cucumber.jvm.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>${cucumber.reporting.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.5</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
+
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven.surefire.plugin.version}</version>
+				<configuration>
+					<useSystemClassLoader>true</useSystemClassLoader>
+					<!-- <suiteXmlFiles> -->
+					<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+					<!-- </suiteXmlFiles> -->
+					<systemPropertyVariables>
+						<env>${DefaultENV}</env>
+						<application>${application.name}</application>
+						<release>${release.version}</release>
+					</systemPropertyVariables>
+
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.3.0.603</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<!--<directory>test-output</directory> -->
+							<directory>${basedir}/test-output/</directory>
+							<includes>
+								<include>**/*</include>
+								<include>**/*.png</include>
+								<include>**/*.tmp</include>
+								<include>**/*.pdf</include>
+								<include>**/*.html</include>
+							</includes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<source>${java.compiler.version}</source>
+					<target>${java.compiler.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4</version>
+			</plugin>
+
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>4.5.0</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>SVB_BDD_FOR_InvestCloud</projectName>
+							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
+							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
+							<buildNumber>1</buildNumber>
+							<parallelTesting>false</parallelTesting>
+							<inputDirectory>${project.build.directory}</inputDirectory>
+							<jsonFiles>
+								<param>**/*.json</param>
+							</jsonFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+
+</project>
