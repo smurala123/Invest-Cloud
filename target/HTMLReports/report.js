@@ -19,9 +19,9 @@ formatter.feature({
     }
   ],
   "line": 5,
-  "name": "To Test Login Functionality",
+  "name": "Test Login Functionality",
   "description": "",
-  "id": "to-test-login-functionality",
+  "id": "test-login-functionality",
   "keyword": "Feature"
 });
 formatter.scenario({
@@ -34,7 +34,7 @@ formatter.scenario({
   "line": 7,
   "name": "Check Login with valid credentials",
   "description": "",
-  "id": "to-test-login-functionality;check-login-with-valid-credentials",
+  "id": "test-login-functionality;check-login-with-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -67,35 +67,35 @@ formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 8755339900,
+  "duration": 5967284200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 2589435800,
+  "duration": 2615451800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 143109700,
+  "duration": 142233000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_is_navigated_to_home_page()"
 });
 formatter.result({
-  "duration": 22776779800,
+  "duration": 29956754400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.close_the_browser()"
 });
 formatter.result({
-  "duration": 199028200,
+  "duration": 4087204000,
   "status": "passed"
 });
 formatter.scenario({
@@ -108,7 +108,7 @@ formatter.scenario({
   "line": 15,
   "name": "Check Login with invalid credentials",
   "description": "",
-  "id": "to-test-login-functionality;check-login-with-invalid-credentials",
+  "id": "test-login-functionality;check-login-with-invalid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -136,28 +136,28 @@ formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 5956966000,
+  "duration": 5697764000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.enter_invalid_username_and_password()"
 });
 formatter.result({
-  "duration": 2688007500,
+  "duration": 4734974800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 197546600,
+  "duration": 133023300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_get_error_message()"
 });
 formatter.result({
-  "duration": 5030541700,
+  "duration": 5024147000,
   "status": "passed"
 });
 });

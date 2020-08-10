@@ -4,12 +4,12 @@
 #@RegressionTest
 Feature: Test Login Functionality
  #@SmokeTest
-	Scenario: Check Login with valid credentials
-		Given invest cloud logn page url
-		When user enter username and password
-		And Clicks on login button
-		Then user is navigated to home page
-		And Close the browser
+#	Scenario: Check Login with valid credentials
+#		Given invest cloud logn page url
+#		When user enter username and password
+#		And Clicks on login button
+#		Then user is navigated to home page
+#		And Close the browser
 		
 #	@invalidCredential
 	Scenario: Check Login with invalid credentials
@@ -17,6 +17,7 @@ Feature: Test Login Functionality
 		When enter invalid username and password
 		And Clicks on login button
 		Then user  get error message
+		And validate and Close the browser
 		
 #		
 # @SmokeTest

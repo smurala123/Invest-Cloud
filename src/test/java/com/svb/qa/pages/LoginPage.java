@@ -39,7 +39,7 @@ public class LoginPage {
 		loginButton.click();
 	}
 	public void enterInvalidUserName() {
-		username.sendKeys("Autotestclienttt");
+		username.sendKeys("TestBDD");
 	}
 	
 	public void enterInvalidPassword() {

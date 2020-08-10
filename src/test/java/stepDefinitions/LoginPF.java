@@ -93,13 +93,18 @@ public class LoginPF {
 	@Then("^user  get error message$")
 	public void user_get_error_message() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		String errMessage = driver.findElement(By.xpath("//div[@model='model.ErrorField']")).getText();
 		System.out.println("The Error message is: "+ errMessage);
 		Assert.assertEquals("Invalid UserID or Password", errMessage);
 	}
 
-
+	@And("^validate and Close the browser$")
+	public void close_the_brows() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    System.out.println("Close the browser");
+	    driver.close();
+	}
 
 
 }
