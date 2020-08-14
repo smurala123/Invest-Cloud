@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,7 +11,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.svb.qa.base.TestBase;
+import com.svb.qa.pages.DashboardPage;
 import com.svb.qa.pages.LoginPage;
+import com.svb.qa.util.CommonUtilities;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -18,11 +22,17 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
-public class LoginPF {
+public class LoginPF extends TestBase{
 	
 	WebDriver driver = null;
 	WebDriverWait wait; 
 	LoginPage login  = new LoginPage(driver);
+	CommonUtilities util = new CommonUtilities();
+	
+	public LoginPF() throws IOException {
+		super();
+	}
+	
 
 	@Given("^invest cloud logn page url$")
 	public void invest_cloud_logn_page_url() throws Throwable {
@@ -43,8 +53,8 @@ public class LoginPF {
 		// Write code here that turns the phrase above into concrete actions
 		System.out.println("Enter username and password");
 		driver.manage().window().maximize();
-		login.enterUserName();
-		login.enterPassword();
+		login.enterUserName(prop.getProperty("clientUserName"));
+		login.enterPassword(prop.getProperty("clientPassword"));
 		
 	}
 
@@ -61,10 +71,11 @@ public class LoginPF {
 		System.out.println("Navigate to Dashboard page");
 		wait = new WebDriverWait(driver, 30);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(@class,'dx-menu-item-text  dx-menu-item-selected')]")));
+	//	WebElement element=util.waitForElementToBeClickable(driver,DashboardPage.dashBoardTitle,10);
 		element.click();
-		String title = driver.getTitle();
+		String dashBoardTitle = driver.getTitle();
 		System.out.println("The Title is: "+ driver.getTitle());
-		Assert.assertEquals("Dashboard", title);
+		Assert.assertEquals("Dashboard", dashBoardTitle);
 	}
 	@Then("^Close the browser$")
 	public void close_the_browser() throws Throwable {

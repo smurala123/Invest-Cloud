@@ -67,35 +67,35 @@ formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 5967284200,
+  "duration": 5519713100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 2615451800,
+  "duration": 2476556400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 142233000,
+  "duration": 184030800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_is_navigated_to_home_page()"
 });
 formatter.result({
-  "duration": 29956754400,
+  "duration": 3764416800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.close_the_browser()"
 });
 formatter.result({
-  "duration": 4087204000,
+  "duration": 4336694800,
   "status": "passed"
 });
 formatter.scenario({
@@ -132,32 +132,44 @@ formatter.step({
   "name": "user  get error message",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 20,
+  "name": "validate and Close the browser",
+  "keyword": "And "
+});
 formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 5697764000,
+  "duration": 5785440500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.enter_invalid_username_and_password()"
 });
 formatter.result({
-  "duration": 4734974800,
+  "duration": 2484939900,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 133023300,
+  "duration": 138013200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_get_error_message()"
 });
 formatter.result({
-  "duration": 5024147000,
+  "duration": 3050407600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginPF.close_the_brows()"
+});
+formatter.result({
+  "duration": 4334257300,
   "status": "passed"
 });
 });

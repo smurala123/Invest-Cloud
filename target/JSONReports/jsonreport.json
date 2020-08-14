@@ -36,7 +36,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5967284200,
+              "duration": 5519713100,
               "status": "passed"
             },
             "line": 8,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 2615451800,
+              "duration": 2476556400,
               "status": "passed"
             },
             "line": 9,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 142233000,
+              "duration": 184030800,
               "status": "passed"
             },
             "line": 10,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 29956754400,
+              "duration": 3764416800,
               "status": "passed"
             },
             "line": 11,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 4087204000,
+              "duration": 4336694800,
               "status": "passed"
             },
             "line": 12,
@@ -112,7 +112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5697764000,
+              "duration": 5785440500,
               "status": "passed"
             },
             "line": 16,
@@ -124,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 4734974800,
+              "duration": 2484939900,
               "status": "passed"
             },
             "line": 17,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 133023300,
+              "duration": 138013200,
               "status": "passed"
             },
             "line": 18,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 5024147000,
+              "duration": 3050407600,
               "status": "passed"
             },
             "line": 19,
@@ -157,6 +157,18 @@
               "location": "LoginPF.user_get_error_message()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4334257300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "validate and Close the browser",
+            "match": {
+              "location": "LoginPF.close_the_brows()"
+            },
+            "keyword": "And "
           }
         ]
       }

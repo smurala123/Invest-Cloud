@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Features", 
+@CucumberOptions(features="src/test/resources/com/svb/qa/features", 
 				glue= {"stepDefinitions"},
 				monochrome=true,
 				//plugin={"pretty","junit:target/JUNITReports/junitReport.xml"},

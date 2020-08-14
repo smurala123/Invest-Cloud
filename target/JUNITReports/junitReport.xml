@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="58.358836">
-<testcase classname="Test Login Functionality" name="Check Login with valid credentials" time="42.768927">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="32.074471">
+<testcase classname="Test Login Functionality" name="Check Login with valid credentials" time="16.281412">
 <system-out><![CDATA[Given invest cloud logn page url............................................passed
 When user enter username and password.......................................passed
 And Clicks on login button..................................................passed
@@ -7,11 +7,12 @@ Then user is navigated to home page.........................................pass
 And Close the browser.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test Login Functionality" name="Check Login with invalid credentials" time="15.589909">
+<testcase classname="Test Login Functionality" name="Check Login with invalid credentials" time="15.793059">
 <system-out><![CDATA[Given invest cloud logn page url............................................passed
 When enter invalid username and password....................................passed
 And Clicks on login button..................................................passed
 Then user  get error message................................................passed
+And validate and Close the browser..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
