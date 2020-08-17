@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests"
+	name="Invest Cloud Test Suite">
+	<test thread-count="1" parallel="tests" name="Test Invest Cloud">
+		<classes>
+			<class name="com.svb.qa.MyRunner.TestRunner"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

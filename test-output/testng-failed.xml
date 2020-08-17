@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Invest Cloud Test Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Test Invest Cloud(failed)">
+    <classes>
+      <class name="com.svb.qa.MyRunner.TestRunner">
+        <methods>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+          <include name="teatDownClass"/>
+        </methods>
+      </class> <!-- com.svb.qa.MyRunner.TestRunner -->
+    </classes>
+  </test> <!-- Test Invest Cloud(failed) -->
+</suite> <!-- Failed suite [Invest Cloud Test Suite] -->

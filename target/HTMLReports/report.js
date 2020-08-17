@@ -67,36 +67,34 @@ formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 5519713100,
+  "duration": 5115749500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 2476556400,
-  "status": "passed"
+  "duration": 6180721100,
+  "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy25.sendKeys(Unknown Source)\r\n\tat com.svb.qa.pages.LoginPage.enterUserName(LoginPage.java:31)\r\n\tat stepDefinitions.LoginPF.user_enter_username_and_password(LoginPF.java:56)\r\n\tat ✽.When user enter username and password(Login.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 184030800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginPF.user_is_navigated_to_home_page()"
 });
 formatter.result({
-  "duration": 3764416800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginPF.close_the_browser()"
 });
 formatter.result({
-  "duration": 4336694800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "comments": [
@@ -141,35 +139,33 @@ formatter.match({
   "location": "LoginPF.invest_cloud_logn_page_url()"
 });
 formatter.result({
-  "duration": 5785440500,
+  "duration": 4897897200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPF.enter_invalid_username_and_password()"
 });
 formatter.result({
-  "duration": 2484939900,
-  "status": "passed"
+  "duration": 7252924100,
+  "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy25.sendKeys(Unknown Source)\r\n\tat com.svb.qa.pages.LoginPage.enterInvalidUserName(LoginPage.java:42)\r\n\tat stepDefinitions.LoginPF.enter_invalid_username_and_password(LoginPF.java:100)\r\n\tat ✽.When enter invalid username and password(Login.feature:17)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "LoginPF.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 138013200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginPF.user_get_error_message()"
 });
 formatter.result({
-  "duration": 3050407600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "LoginPF.close_the_brows()"
 });
 formatter.result({
-  "duration": 4334257300,
-  "status": "passed"
+  "status": "skipped"
 });
 });

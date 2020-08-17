@@ -1,18 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="32.074471">
-<testcase classname="Test Login Functionality" name="Check Login with valid credentials" time="16.281412">
-<system-out><![CDATA[Given invest cloud logn page url............................................passed
-When user enter username and password.......................................passed
-And Clicks on login button..................................................passed
-Then user is navigated to home page.........................................passed
-And Close the browser.......................................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="23.447292">
+<testcase classname="Test Login Functionality" name="Check Login with valid credentials" time="11.296471">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:560)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)&#13;&#10;&#9;at com.svb.qa.pages.LoginPage.enterUserName(LoginPage.java:31)&#13;&#10;&#9;at stepDefinitions.LoginPF.user_enter_username_and_password(LoginPF.java:56)&#13;&#10;&#9;at ✽.When user enter username and password(Login.feature:9)&#13;&#10;"><![CDATA[Given invest cloud logn page url............................................passed
+When user enter username and password.......................................failed
+And Clicks on login button..................................................skipped
+Then user is navigated to home page.........................................skipped
+And Close the browser.......................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at com.svb.qa.pages.LoginPage.enterUserName(LoginPage.java:31)
+	at stepDefinitions.LoginPF.user_enter_username_and_password(LoginPF.java:56)
+	at ✽.When user enter username and password(Login.feature:9)
+]]></failure>
 </testcase>
-<testcase classname="Test Login Functionality" name="Check Login with invalid credentials" time="15.793059">
-<system-out><![CDATA[Given invest cloud logn page url............................................passed
-When enter invalid username and password....................................passed
-And Clicks on login button..................................................passed
-Then user  get error message................................................passed
-And validate and Close the browser..........................................passed
-]]></system-out>
+<testcase classname="Test Login Functionality" name="Check Login with invalid credentials" time="12.150821">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:560)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)&#13;&#10;&#9;at com.svb.qa.pages.LoginPage.enterInvalidUserName(LoginPage.java:42)&#13;&#10;&#9;at stepDefinitions.LoginPF.enter_invalid_username_and_password(LoginPF.java:100)&#13;&#10;&#9;at ✽.When enter invalid username and password(Login.feature:17)&#13;&#10;"><![CDATA[Given invest cloud logn page url............................................passed
+When enter invalid username and password....................................failed
+And Clicks on login button..................................................skipped
+Then user  get error message................................................skipped
+And validate and Close the browser..........................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+	at com.svb.qa.pages.LoginPage.enterInvalidUserName(LoginPage.java:42)
+	at stepDefinitions.LoginPF.enter_invalid_username_and_password(LoginPF.java:100)
+	at ✽.When enter invalid username and password(Login.feature:17)
+]]></failure>
 </testcase>
 </testsuite>
