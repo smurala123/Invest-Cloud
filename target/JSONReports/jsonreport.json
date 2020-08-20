@@ -3,11 +3,11 @@
     "comments": [
       {
         "line": 1,
-        "value": "#POC using BDD framework."
+        "value": "#"
       },
       {
         "line": 2,
-        "value": "#Login Functionality automation"
+        "value": "#Login Functionality automation with valid and invalid credentials."
       },
       {
         "line": 3,
@@ -27,30 +27,51 @@
             "value": "#@SmokeTest"
           }
         ],
+        "before": [
+          {
+            "result": {
+              "duration": 9056042400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPF.setUp()"
+            }
+          }
+        ],
         "line": 7,
         "name": "Check Login with valid credentials",
         "description": "",
         "id": "test-login-functionality;check-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2840358300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPF.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5115749500,
+              "duration": 155555200,
               "status": "passed"
             },
             "line": 8,
-            "name": "invest cloud logn page url",
+            "name": "invest cloud login page url",
             "match": {
-              "location": "LoginPF.invest_cloud_logn_page_url()"
+              "location": "LoginPF.invest_cloud_login_page_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6180721100,
-              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy25.sendKeys(Unknown Source)\r\n\tat com.svb.qa.pages.LoginPage.enterUserName(LoginPage.java:31)\r\n\tat stepDefinitions.LoginPF.user_enter_username_and_password(LoginPF.java:56)\r\n\tat ✽.When user enter username and password(Login.feature:9)\r\n",
-              "status": "failed"
+              "duration": 1619749000,
+              "status": "passed"
             },
             "line": 9,
             "name": "user enter username and password",
@@ -61,7 +82,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 146838500,
+              "status": "passed"
             },
             "line": 10,
             "name": "Clicks on login button",
@@ -72,7 +94,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5106713300,
+              "status": "passed"
             },
             "line": 11,
             "name": "user is navigated to home page",
@@ -80,53 +103,63 @@
               "location": "LoginPF.user_is_navigated_to_home_page()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "Close the browser",
-            "match": {
-              "location": "LoginPF.close_the_browser()"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
         "comments": [
           {
-            "line": 14,
+            "line": 13,
             "value": "#\t@invalidCredential"
           }
         ],
-        "line": 15,
+        "before": [
+          {
+            "result": {
+              "duration": 7719954900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPF.setUp()"
+            }
+          }
+        ],
+        "line": 14,
         "name": "Check Login with invalid credentials",
         "description": "",
         "id": "test-login-functionality;check-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2746304000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPF.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4897897200,
+              "duration": 89000,
               "status": "passed"
             },
-            "line": 16,
-            "name": "invest cloud logn page url",
+            "line": 15,
+            "name": "invest cloud login page url",
             "match": {
-              "location": "LoginPF.invest_cloud_logn_page_url()"
+              "location": "LoginPF.invest_cloud_login_page_url()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7252924100,
-              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:560)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy25.sendKeys(Unknown Source)\r\n\tat com.svb.qa.pages.LoginPage.enterInvalidUserName(LoginPage.java:42)\r\n\tat stepDefinitions.LoginPF.enter_invalid_username_and_password(LoginPF.java:100)\r\n\tat ✽.When enter invalid username and password(Login.feature:17)\r\n",
-              "status": "failed"
+              "duration": 1572625000,
+              "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "enter invalid username and password",
             "match": {
               "location": "LoginPF.enter_invalid_username_and_password()"
@@ -135,9 +168,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 170110300,
+              "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "Clicks on login button",
             "match": {
               "location": "LoginPF.clicks_on_login_button()"
@@ -146,25 +180,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3021322000,
+              "status": "passed"
             },
-            "line": 19,
+            "line": 18,
             "name": "user  get error message",
             "match": {
               "location": "LoginPF.user_get_error_message()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "validate and Close the browser",
-            "match": {
-              "location": "LoginPF.close_the_brows()"
-            },
-            "keyword": "And "
           }
         ]
       }

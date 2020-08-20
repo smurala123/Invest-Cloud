@@ -1,4 +1,2 @@
-com\svb\qa\MyRunner\TestRunner.class
-stepDefinitions\Login.class
-com\svb\qa\pages\LoginPage.class
-stepDefinitions\LoginPF.class
+com\svb\ic\stepDefinitions\LoginPF.class
+com\svb\ic\myRunner\TestRunner.class

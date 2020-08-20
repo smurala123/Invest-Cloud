@@ -1,4 +1,2 @@
-C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\stepDefinitions\LoginPF.java
-C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\stepDefinitions\Login.java
-C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\com\svb\qa\pages\LoginPage.java
-C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\com\svb\qa\MyRunner\TestRunner.java
+C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\com\svb\ic\stepDefinitions\LoginPF.java
+C:\Users\dbehera\eclipse-workspace\InvestCloudBDD\src\test\java\com\svb\ic\myRunner\TestRunner.java
