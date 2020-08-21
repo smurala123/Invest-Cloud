@@ -20,7 +20,7 @@ public class CommonUtilities {
 
 	public static WebDriver driver;
 	private long DEFAULT_TIMEOUT = 30;
-    private long POLLING_TIME = 5;
+	private long POLLING_TIME = 5;
 
 	/**
 	 * Click the element using Actions class
@@ -198,22 +198,22 @@ public class CommonUtilities {
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 
 	}
-	 /**
-     * Waits for the element to be clickable
-     *
-     * @param driver
-     * @param element
-     * @return
-     */
-    public boolean waitForElementToBeClickable(WebDriver driver, WebElement element) {
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
-        		.withTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS)
-        		.pollingEvery(POLLING_TIME, TimeUnit.SECONDS)
-        		.ignoring(NoSuchElementException.class);
-        WebElement webElement = wait.until(ExpectedConditions.elementToBeClickable(element));
-        webElement.click();
-        return true;
-    }
+	/**
+	 * Waits for the element to be clickable
+	 *
+	 * @param driver
+	 * @param element
+	 * @return
+	 */
+	public boolean waitForElementToBeClickable(WebDriver driver, WebElement element) {
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS)
+				.pollingEvery(POLLING_TIME, TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class);
+		WebElement webElement = wait.until(ExpectedConditions.elementToBeClickable(element));
+		webElement.click();
+		return true;
+	}
 
 
 

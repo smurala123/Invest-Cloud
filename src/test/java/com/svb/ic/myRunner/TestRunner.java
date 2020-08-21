@@ -11,6 +11,12 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
+
+/**
+ * Run all the features file from given path 
+ * Generate different report based on the plugin
+ * Run scenarios from feature file based on @tags
+ */
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features", 
 				glue= {"com.svb.ic.stepDefinitions"},
@@ -38,6 +44,9 @@ public class TestRunner {
 		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
 	}
 	
+	/**
+	 * Get list of features file from given path
+	 */
 	@DataProvider
 	public Object[][] features() {
 		return testNGCucumberRunner.provideFeatures();
@@ -46,6 +55,7 @@ public class TestRunner {
 	@AfterClass
 	public void teatDownClass() {
 		testNGCucumberRunner.finish();
+
 	}
 
 }

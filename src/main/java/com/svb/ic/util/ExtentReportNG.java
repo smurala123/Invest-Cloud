@@ -28,6 +28,9 @@ public class ExtentReportNG {
 	extent = new ExtentReports();
 	extent.attachReporter(htmlReporter);
 	extent.setSystemInfo("TestId", "Client");
+	/*
+	 * Report name and sys info should be dynamic
+	 */
 	htmlReporter.config().setReportName("Invest Cloud Test Results");
 	htmlReporter.config().setDocumentTitle("Test Resulsts");
 	
