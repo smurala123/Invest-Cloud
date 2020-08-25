@@ -24,6 +24,7 @@ public class Hooks extends TestBase{
 	@Before
 	public void setUp() throws IOException {
 		try {
+			
 			browserInitialization();
 		}
 		catch(Exception ex) {
@@ -35,10 +36,11 @@ public class Hooks extends TestBase{
 	}
 
 	@After
-	public void tearDown() throws InterruptedException {
+	public void tearDown() throws InterruptedException, IOException {
 		Thread.sleep(2000);
 		driver.quit();
 		System.out.println("Close the browser");
+		
 	}
 
 

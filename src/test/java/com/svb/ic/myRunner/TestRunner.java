@@ -1,5 +1,7 @@
 package com.svb.ic.myRunner;
 
+import java.io.IOException;
+
 import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -53,8 +55,9 @@ public class TestRunner {
 	}
 	
 	@AfterClass
-	public void teatDownClass() {
+	public void teatDownClass() throws IOException {
 		testNGCucumberRunner.finish();
+		Runtime.getRuntime().exec("taskkill /im chromedriver.exe /f");
 
 	}
 
