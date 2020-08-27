@@ -2,15 +2,20 @@ package com.svb.ic.stepDefinitions;
 
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import com.svb.ic.base.TestBase;
 import com.svb.ic.pages.LoginPage;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks extends TestBase{
 
 	//	LoginPage login ; 
+	
 
 	public Hooks() throws IOException {
 		super();
@@ -36,11 +41,15 @@ public class Hooks extends TestBase{
 	}
 
 	@After
-	public void tearDown() throws InterruptedException, IOException {
+	public void tearDown(Scenario scenario) throws InterruptedException, IOException {
+		
+		if(scenario.isFailed())	{
+			System.out.println(scenario.getName() + "is failed");
+			scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES),"image/png");
+		}
 		Thread.sleep(2000);
 		driver.quit();
 		System.out.println("Close the browser");
-		
 	}
 
 

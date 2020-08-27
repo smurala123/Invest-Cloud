@@ -135,6 +135,7 @@
 				<version>${maven.surefire.plugin.version}</version>
 				<configuration>
 					<useSystemClassLoader>true</useSystemClassLoader>
+					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
 					<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>

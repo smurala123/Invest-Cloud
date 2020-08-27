@@ -45,6 +45,7 @@ public class LoginPage extends TestBase {
 	 */
 	public void enterUserName(String userName) {
 		username.sendKeys(userName);
+		
 	}
 
 	public void enterPassword(String pass) {
