@@ -1,2 +1,3 @@
-com\svb\ic\stepDefinitions\LoginPF.class
 com\svb\ic\myRunner\TestRunner.class
+com\svb\ic\stepDefinitions\LoginTest.class
+com\svb\ic\stepDefinitions\Hooks.class
