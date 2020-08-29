@@ -76,13 +76,13 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.java.version}</version>
-			<scope>test</scope>
+<!-- 			<scope>test</scope> -->
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
 			<version>${cucumber.jvm.version}</version>
-			<scope>test</scope>
+<!-- 			<scope>test</scope> -->
 		</dependency>
 
 		<dependency>

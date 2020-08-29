@@ -3,6 +3,8 @@ package com.svb.ic.stepDefinitions;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,7 +35,9 @@ public class LoginTest extends TestBase{
 	//WebDriver driver = null;
 	WebDriverWait wait; 
 	LoginPage login ; 
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
 	CommonUtilities util = new CommonUtilities();
+	
 
 	public LoginTest() throws IOException {
 		super();
@@ -43,13 +47,14 @@ public class LoginTest extends TestBase{
 	public void invest_cloud_login_page_url() throws Throwable {
 
 		login = new LoginPage();
-		System.out.println("Invest Cloud Url Launch Successfully");
+		log.info("Invest Cloud Url Launch Successfully");
 	}
 
 	@When("^user enter username and password$")
 	public void user_enter_username_and_password() throws Throwable {
 		//login = new LoginPage(driver);	
-		System.out.println("Enter username and password");
+		//System.out.println("Enter username and password");
+		log.info("Enter username and password");
 		login.enterUserName(prop.getProperty("clientUserName"));
 		login.enterPassword(prop.getProperty("clientPassword"));
 
@@ -57,22 +62,27 @@ public class LoginTest extends TestBase{
 
 	@And("^Clicks on login button$")
 	public void clicks_on_login_button() throws Throwable {
-		System.out.println("Click on Login Button");
+		//System.out.println("Click on Login Button");
+		log.info("Click on Login Button");
 		login.clickLogin();
 	}
 
 	@Then("^user is navigated to home page$")
 	public void user_is_navigated_to_home_page() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		System.out.println("Login Successfully..");
-		System.out.println("Navigate to Dashboard page");
+		//System.out.println("Login Successfully..");
+		//System.out.println("Navigate to Dashboard page");
+		log.info("Login Successfully..");
+		log.info("Navigate to Dashboard page");
+		
 		wait = new WebDriverWait(driver, 30);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(@class,'dx-menu-item-text  dx-menu-item-selected')]")));
 		//WebElement element=util.waitForElementToBeClickable(driver,DashboardPage.dashBoardTitle,10);
 		//System.out.println("The Element is :"+ element);             
 		element.click();
 		String dashBoardTitle = driver.getTitle();
-		System.out.println("The Title is: "+ driver.getTitle());
+		//System.out.println("The Title is: "+ driver.getTitle());
+		log.info("The Title is: "+ driver.getTitle());
 		Assert.assertEquals("Dashboard", dashBoardTitle);
 	}
 
@@ -83,6 +93,7 @@ public class LoginTest extends TestBase{
 		login = new LoginPage();
 		login.enterUserName(prop.getProperty("invalidUserName"));
 		login.enterPassword(prop.getProperty("invalidPassword"));
+		log.info("Enter invalid user name and password");
 	}
 
 	@Then("^user  get error message$")
@@ -92,6 +103,7 @@ public class LoginTest extends TestBase{
 		String errMessage = driver.findElement(By.xpath("//div[@model='model.ErrorField']")).getText();
 		System.out.println("The Error message is: "+ errMessage);
 		Assert.assertEquals("Invalid UserID or Password", errMessage);
+		log.info("User get error message");
 	}
 
 

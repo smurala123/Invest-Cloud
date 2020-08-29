@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +22,7 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	static int statusCode;
-
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
 
 	/**
 	 * Constructor to load properties file
@@ -57,7 +59,8 @@ public class TestBase {
 
 		}
 		else {
-			System.out.println("Browser Name Not Found");
+			//System.out.println("Browser Name Not Found");
+			log.info("Browser Name Not Found");
 		}
 
 		driver.manage().window().maximize();
@@ -76,7 +79,8 @@ public class TestBase {
 		List<WebElement> links = driver.findElements(By.cssSelector("a"));
 		String href;
 		statusCode = new HttpResponse().getStatus();
-		System.out.println("The Status Code is: "+ statusCode);
+	//	System.out.println("The Status Code is: "+ statusCode);
+		log.info("The Status Code is: "+ statusCode);
 		return statusCode;
 
 	}

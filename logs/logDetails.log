@@ -1,0 +1,55 @@
+2020-08-28 13:21:19 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 13:21:19 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-28 13:21:20 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 13:21:20 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-28 13:21:20 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-28 13:21:35 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 13:21:36 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 16:24:42 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 16:24:42 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-28 16:24:44 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 16:24:44 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-28 16:24:44 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-28 16:24:48 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-28 16:24:51 [TestNG] INFO  TestBase:56 - Close the browser
+2020-08-28 16:24:59 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 16:25:01 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-28 16:25:01 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 16:25:04 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-28 16:25:06 [TestNG] INFO  TestBase:56 - Close the browser
+2020-08-28 17:03:34 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:03:34 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-28 17:03:36 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:03:36 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-28 17:03:36 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-28 17:03:46 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-28 17:03:49 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-28 17:03:56 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:03:58 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-28 17:03:58 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:04:01 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-28 17:04:04 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-28 17:05:48 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:05:48 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-28 17:05:51 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:05:51 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-28 17:05:51 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-28 17:05:57 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-28 17:06:00 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-28 17:06:07 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:06:09 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-28 17:06:09 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:06:13 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-28 17:06:15 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-28 17:07:55 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:07:55 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-28 17:07:57 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:07:57 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-28 17:07:57 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-28 17:08:28 [TestNG] INFO  TestBase:49 - Check Login with valid credentialsis failed
+2020-08-28 17:08:31 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-28 17:08:39 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-28 17:08:40 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-28 17:08:40 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-28 17:08:43 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-28 17:08:46 [TestNG] INFO  TestBase:55 - Close the browser

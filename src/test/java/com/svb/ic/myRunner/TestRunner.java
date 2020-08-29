@@ -21,7 +21,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features", 
-				glue= {"com.svb.ic.stepDefinitions"},
+				glue= {"com.svb.ic.stepDefinitions","com.svb.ic.base"},
 				monochrome=true,
 				//plugin={"pretty","junit:target/JUNITReports/junitReport.xml"},
 				//tags="@SmokeTest")
