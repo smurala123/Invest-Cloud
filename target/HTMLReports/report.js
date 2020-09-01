@@ -25,7 +25,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9056042400,
+  "duration": 8089858700,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,39 +63,39 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginPF.invest_cloud_login_page_url()"
+  "location": "LoginTest.invest_cloud_login_page_url()"
 });
 formatter.result({
-  "duration": 155555200,
+  "duration": 301847200,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.user_enter_username_and_password()"
+  "location": "LoginTest.user_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 1619749000,
+  "duration": 1741335100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.clicks_on_login_button()"
+  "location": "LoginTest.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 146838500,
+  "duration": 117161400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.user_is_navigated_to_home_page()"
+  "location": "LoginTest.user_is_navigated_to_home_page()"
 });
 formatter.result({
-  "duration": 5106713300,
+  "duration": 4326334800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2840358300,
+  "duration": 2800537800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7719954900,
+  "duration": 6914214900,
   "status": "passed"
 });
 formatter.scenario({
@@ -133,35 +133,35 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginPF.invest_cloud_login_page_url()"
+  "location": "LoginTest.invest_cloud_login_page_url()"
 });
 formatter.result({
-  "duration": 89000,
+  "duration": 1646400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.enter_invalid_username_and_password()"
+  "location": "LoginTest.enter_invalid_username_and_password()"
 });
 formatter.result({
-  "duration": 1572625000,
+  "duration": 1600992200,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.clicks_on_login_button()"
+  "location": "LoginTest.clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 170110300,
+  "duration": 156362000,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPF.user_get_error_message()"
+  "location": "LoginTest.user_get_error_message()"
 });
 formatter.result({
-  "duration": 3021322000,
+  "duration": 3051272100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2746304000,
+  "duration": 2756186900,
   "status": "passed"
 });
 });

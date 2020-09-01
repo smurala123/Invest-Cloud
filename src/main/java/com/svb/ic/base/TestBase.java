@@ -42,19 +42,19 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\drivers\\win\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions(); 
 			options.setExperimentalOption("useAutomationExtension", false);
 			driver = new ChromeDriver(options);
 		}
 
 		else if(browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"src\\test\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"src\\test\\resources\\drivers\\win\\chromedriver.exe");
 			driver = new FirefoxDriver();
 		}
 
 		else if(browserName.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"src\\test\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"src\\test\\resources\\drivers\\win\\chromedriver.exe");
 			driver = new InternetExplorerDriver();
 
 		}

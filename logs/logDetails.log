@@ -53,3 +53,63 @@
 2020-08-28 17:08:40 [TestNG] INFO  TestBase:66 - Click on Login Button
 2020-08-28 17:08:43 [TestNG] INFO  TestBase:106 - User get error message
 2020-08-28 17:08:46 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 10:10:06 [main] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:10:06 [main] INFO  TestBase:57 - Enter username and password
+2020-08-31 10:10:07 [main] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:10:07 [main] INFO  TestBase:75 - Login Successfully..
+2020-08-31 10:10:07 [main] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-31 10:10:44 [main] INFO  TestBase:49 - Check Login with valid credentialsis failed
+2020-08-31 10:10:47 [main] INFO  TestBase:55 - Close the browser
+2020-08-31 10:10:55 [main] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:10:57 [main] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-31 10:10:57 [main] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:11:00 [main] INFO  TestBase:106 - User get error message
+2020-08-31 10:11:03 [main] INFO  TestBase:55 - Close the browser
+2020-08-31 10:12:28 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:12:28 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-31 10:12:30 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:12:30 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-31 10:12:30 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-31 10:12:43 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-31 10:12:46 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 10:12:57 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:13:00 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-31 10:13:00 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:13:03 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-31 10:13:06 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 10:13:59 [main] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:13:59 [main] INFO  TestBase:57 - Enter username and password
+2020-08-31 10:14:01 [main] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:14:01 [main] INFO  TestBase:75 - Login Successfully..
+2020-08-31 10:14:01 [main] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-31 10:14:07 [main] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-31 10:14:10 [main] INFO  TestBase:55 - Close the browser
+2020-08-31 10:14:21 [main] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 10:14:23 [main] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-31 10:14:23 [main] INFO  TestBase:66 - Click on Login Button
+2020-08-31 10:14:26 [main] INFO  TestBase:106 - User get error message
+2020-08-31 10:14:28 [main] INFO  TestBase:55 - Close the browser
+2020-08-31 12:42:34 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 12:42:34 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-31 12:42:36 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 12:42:36 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-31 12:42:36 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-31 12:42:43 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-31 12:42:46 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 12:42:53 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 12:42:55 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-31 12:42:55 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 12:42:58 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-31 12:43:01 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 17:32:19 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 17:32:19 [TestNG] INFO  TestBase:57 - Enter username and password
+2020-08-31 17:32:21 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 17:32:21 [TestNG] INFO  TestBase:75 - Login Successfully..
+2020-08-31 17:32:21 [TestNG] INFO  TestBase:76 - Navigate to Dashboard page
+2020-08-31 17:32:26 [TestNG] INFO  TestBase:85 - The Title is: Dashboard
+2020-08-31 17:32:28 [TestNG] INFO  TestBase:55 - Close the browser
+2020-08-31 17:32:35 [TestNG] INFO  TestBase:50 - Invest Cloud Url Launch Successfully
+2020-08-31 17:32:37 [TestNG] INFO  TestBase:96 - Enter invalid user name and password
+2020-08-31 17:32:37 [TestNG] INFO  TestBase:66 - Click on Login Button
+2020-08-31 17:32:40 [TestNG] INFO  TestBase:106 - User get error message
+2020-08-31 17:32:43 [TestNG] INFO  TestBase:55 - Close the browser
